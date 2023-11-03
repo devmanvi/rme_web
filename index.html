@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    <style>
+       .logo img{
+            height: 80px;
+            width: 100px;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 3px 3px 2px red;
+
+
+        }
+        .nav{
+            background-color: silver;
+            position: fixed;
+            z-index: 100;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: black;
+            display: inline;
+            justify-content:space-around;
+            margin: 40px;
+            position: relative;
+            left: 300px;
+            top: -60px;
+            font-size: 20px;
+           
+}
+
+.carousel-inner img{
+    position: relative;
+    top: 150px;
+    height: 900px;
+    width: 70%;
+    margin-left: 300px;
+
+}
+.carousel-control-prev-icon{
+    /* margin-left: 500px; */
+    color: red;
+    top: 0px;
+    transform: translate(250px,100px);
+}
+
+
+.carousel-control-next-icon{
+    /* margin-left: 500px; */
+    top: 0px;
+    color: red;
+    transform: translate(-250px,100px);
+}
+.carousel-caption{
+    color: red;
+    top:190px;
+    left: 390px;
+
+}
+.style{
+    margin-top: 70px;
+    height:85vh;
+
+    /* padding-top:70px; */
+
+
+}
+.style h2{
+    text-align: center;
+}
+#mob img{
+    height: 250px;
+    width: 250px;
+
+    margin:100px 0px 0px 100px;
+}
+#mob{
+    background-color: rgb(236, 237, 240);
+    width: 100%;
+    height: 600px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: baseline;
+    border-radius:10px;
+    box-shadow: 1px 0px 0px black;
+}
+div .smartphnes{
+    background-color: white;
+    height:480px;
+    /* margin-left: 2%;
+    margin-right: 1%; */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding-left:2px;
+    display:inline-block;
+
+}
+.smartphnes:hover{
+    scale:1.012;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#m1 img{
+    margin:25px;
+}
+/* #m1 img:hover{
+    cursor: pointer;
+} */
+
+.smartphnes .mo1 h3{
+    color: red;
+    margin-left: 20%;
+}
+.smartphnes .mo1 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
+}
+#m2 img{
+    margin: 25px;
+}
+.smartphnes .mo2 h3{
+    color: red;
+    margin-left: 40px;
+}
+.smartphnes .mo2 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#m3 img{
+    margin: 25px;
+}
+.smartphnes .mo3 h3{
+    color: red;
+    margin-left: 40px;
+}
+.smartphnes .mo3 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#m4 img{
+    margin: 25px;
+}
+.smartphnes .mo4 h3{
+    color: red;
+    margin-left: 40px;
+}
+.smartphnes .mo4 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
+}
+#m5 img{
+    margin: 25px;
+}
+.smartphnes .mo5 h3{
+    color: red;
+    margin-left: 40px;
+}
+.smartphnes .mo5 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
+}
+#m6 img{
+    margin: 25px;
+}
+.smartphnes .mo6 h3{
+    color: red;
+    margin-left: 40px;
+}
+.smartphnes .mo6 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.style1{
+    margin-top: 160px;
+    height:85vh;
+
+}
+.style1 h2{
+    text-align: center;
+    padding: 10px;
+}
+.access:hover{
+    scale: 1.012;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.accessories img{
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+
+    margin:25px 0px 0px 100px;
+}
+.accessories{
+    background-color: rgb(136, 151, 194);
+    width: 100%;
+    height: 600px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: baseline;
+    border-radius:10px;
+    box-shadow: 1px 0px 0px black;
+}
+div .access{
+    background-color: white;
+    height:480px;
+    width: 16%;
+    /* margin-left: 2%;
+    margin-right: 1%; */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-left:2px;
+    display:inline-block;
+
+}
+#a1 img{
+    margin-left: 0px;
+}
+.access .ac1 h3{
+    color: red;
+    margin-left: 20px;
+    font-size: 19px;
+}
+.access .ac1 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}
+#a2 img{
+    margin-left: 0px;
+}
+.access .ac2 h3{
+    color: red;
+    margin-left: 30px;
+    font-size: 19px;
+}
+.access .ac2 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#a3 img{
+    margin-left: 0px;
+}
+.access .ac3 h3{
+    color: red;
+    margin-left: 30px;
+    font-size: 19px;
+}
+.access .ac3 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#a4 img{
+    margin-left: 0px;
+}
+.access .ac4 h3{
+    color: red;
+    margin-left: 30px;
+    font-size: 19px;
+}
+.access .ac4 h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#a5 img{
+    margin-left: 0px;
+}
+.access .ac5 h3{
+    color: red;
+    margin-left: 30px;
+    font-size: 19px;
+}
+.access .ac5 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+#a6 img{
+    margin-left: 0px;
+}
+.access .ac6 h3{
+    color: red;
+    margin-left: 30px;
+    font-size: 19px;
+}
+.access .ac6 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+
+.style3{
+    margin-top: 70px;
+    height:85vh;
+
+    /* padding-top:70px; */
+
+
+}
+.style3 h2{
+    text-align: center;
+}
+#lap img{
+    height:150px;
+    width: 400px;
+
+    margin:100px 0px 0px 100px;
+}
+#lap{
+    background-color: rgb(236, 237, 240);
+    width: 100%;
+    height: 600px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: baseline;
+    border-radius:10px;
+    box-shadow: 1px 0px 0px black;
+}
+div .laptp{
+    background-color: white;
+    height:500px;
+    /* margin-left: 2%;
+    margin-right: 1%; */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding-left:2px;
+    display:inline-block;
+
+}
+.laptp:hover{
+    scale:1.012;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#l1 img{
+    margin-left: 0px;
+}
+.laptp .lp1 h3{
+    color: red;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+.laptp .lp1 p,h4{
+    color: rgb(102, 22, 22);
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#l2 img{
+    margin-left: 0px;
+}
+.laptp .lp2 h3{
+    color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+.laptp .lp2 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#l3 img{
+    margin-left: 0px;
+}
+.laptp .lp3 h3{
+    color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+.laptp .lp3 p,h4{
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="nav">
+        <nav class="logo">
+            <img src="mainlogo.jpeg" alt="">
+            <div class="nav1">
+                <a href="#mob">Mobiles</a>
+                <a href="#acc">Accessories & Audio</a>
+                <a href="#lap">Laptops</a>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="new-launch.webp" class="d-block" alt="...">
+                <div class="carousel-caption">
+                  <h5>Realme 11 5G</h5>
+                  <p>Launching on:23rd aug,12:00pm</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="new-launch1.webp" class="d-block" alt="...">
+                <div class="carousel-caption">
+                  <h5>Realme Buds Air 5 Pro</h5>
+                  <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="new-launch2.webp" class="d-block" alt="...">
+                <div class="carousel-caption">
+                  <h5>Realme Buds Air 5</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <!-- Mobiles -->
+    <div class="style">
+        <h1 style="padding-top: 250px;"></h1>
+        <h2>Mobiles</h2>
+    <div class="Mobiles" id="mob">
+       
+        <div class="smartphnes" id="m1"><a href=""><img src="realme C53.png" alt=""></a><div class="mo1"><h3>Realme C53</h3><br><p>108MP Champion</p><h4 style="margin-left: 100px;">&#8377 9,999</h4></div></div>
+        <div class="smartphnes" id="m2"><img src="realme narzo N53.png" alt=""><div class="mo2"><h3>Realme Narzo N53</h3><br><p style="margin-left: 90px;">Next Gen</p><h4 style="margin-left: 100px;">&#8377 8,999</h4></div></div>
+        <div class="smartphnes" id="m3"><img src="realme narzo N55.png" alt=""><div class="mo3"><h3>Realme Narzo N55</h3><br><p style="margin-left: 90px;">Next Gen power</p><h4 style="margin-left: 100px;">&#8377 10,999</h4></div></div>
+        <div class="smartphnes" id="m4"><img src="narzo60.png" alt=""><div class="mo4"><h3>Realme Narzo 60 5G</h3><br><p style="margin-left: 50px;">90Hz super AMOLED Display</p><h4 style="margin-left: 100px;">&#8377 17,999</h4></div></div>
+         <!-- <div class="smartphnes" id="m5"><img src="11pro.png" alt=""><div class="mo5"><h3>Realme 11 PRO 5G</h3><br><p>Curved Display</p><h4>&#8377 23,999</h4></div></div>
+         <div class="smartphnes" id="m6"><img src="11pro+.png" alt=""><div class="mo6"><h3>Realme 11 PRO+ 5G</h3><br><p>200MP cam</p><h4>&#8377 27,999</h4></div></div> -->
+    </div>
+</div>
+
+<!-- Accesories-->
+<div class="style1">
+    <h2>Accessories & Audio</h2>
+<div class="accessories" id="acc">
+   
+    <div class="access" id="a1"><a href=""><img src="a1.png" alt=""></a><div class="ac1"><h3>Realme Buds wireless 2 Neo</h3><br><p>Better Bass Non-stop</p><h4>&#8377 1,299</h4></div></div>
+    <div class="access" id="a2"><img src="a2.png" alt=""><div class="ac2"><h3>Realme TechLife BUds T100</h3><br><p>Next Gen</p><h4 style="margin-left: 50px;">&#8377 1,399<br><del style="margin-left: 0px;">&#8377 1,599</del></h4></div></div>
+    <div class="access" id="a3"><img src="a3.png" alt=""><div class="ac3"><h3>Realme Mobile GameTrigger</h3><br><p>Physical Buttons</p><h4 style="margin-left: 50px;">&#8377 699</h4></div></div>
+    <div class="access" id="a4"><img src="a4.png" alt=""><div class="ac4"><h3 style="margin-left: 20px;">Realme MIcro-UsB cable</h3><br><h4 style="margin-left: 100px;">&#8377 199</h4></div></div>
+    <div class="access" id="a5"><img src="a5.png" alt=""><div class="ac5"><h3>Realme Type C cable</h3><br><p style="margin-left: 65px;">Durable Cable</p><h4 style="margin-left: 100px;">&#8377 249</h4></div></div>
+    <!-- <div class="access" id="a6"><img src="a6.jpg" alt=""><div class="ac6"><h3>Realme Buds Classic</h3><br><p>Real Comfortable</p><h4>&#8377 399</h4></div></div> -->
+</div>
+</div>
+
+<!-- laptops -->
+<div class="style3">
+    <h2>Laptops</h2>
+<div class="laptops" id="lap">
+   
+    <div class="laptp" id="l1"><a href=""><img src="l1i314.jpg" alt=""></a><div class="lp1"><h3 style="margin-left: 100px;">Realme Book Slim</h3><br><p style="margin-left: 60px;">256-512GB drive 8GB RAM i3</p><h4 style="margin-left: 130px;">&#8377 35,999</h4></div></div>
+    <div class="laptp" id="l2"><img src="book-prime-thin-and-light-laptop-realme-original-imagcwmbyfrmzrhu.webp" alt=""><div class="lp2"><h3 style="margin-left: 90px;">Realme Book Core i5</h3><br><p style="margin-left: 120px;">512GB SSD</p><h4 style="margin-left: 130px;">&#8377 56,999</h4></div></div>
+     <div class="laptp" id="l3"><img src="l1i314.jpg" alt=""><div class="lp3"><h3 style="margin-left: 70px;">Realme Evo Core i5 RMNB1002</h3><br><p style="margin-left: 80px;">Refurbished 8GB/512SSD</p><h4 style="margin-left: 130px;">&#8377 39,999</h4></div></div>
+   <!-- <div class="smartphnes" id="m4"><img src="narzo60.png" alt=""><div class="mo4"><h3>Realme Narzo 60 5G</h3><br><p>90Hz super AMOLED Display</p><h4>&#8377 17,999</h4></div></div>
+    <div class="smartphnes" id="m5"><img src="11pro.png" alt=""><div class="mo5"><h3>Realme 11 PRO 5G</h3><br><p>Curved Display</p><h4>&#8377 23,999</h4></div></div>
+    <div class="smartphnes" id="m6"><img src="11pro+.png" alt=""><div class="mo6"><h3>Realme 11 PRO+ 5G</h3><br><p>200MP cam</p><h4>&#8377 27,999</h4></div></div> -->
+</div>
+</div>
+</body>
+</html>
